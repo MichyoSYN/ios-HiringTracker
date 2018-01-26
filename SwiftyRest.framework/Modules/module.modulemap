@@ -1,0 +1,11 @@
+framework module SwiftyRest {
+  umbrella header "SwiftyRest.h"
+
+  export *
+  module * { export * }
+}
+
+module SwiftyRest.Swift {
+    header "SwiftyRest-Swift.h"
+    requires objc
+}

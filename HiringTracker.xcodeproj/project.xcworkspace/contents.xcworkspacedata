@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:HiringTracker.xcodeproj">
+      location = "group:/Users/songm3/Github/HiringTracker/Podfile">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>

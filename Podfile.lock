@@ -1,0 +1,29 @@
+PODS:
+  - Alamofire (4.6.0)
+  - FontAwesome.swift (1.2.0)
+  - OAuthSwift (1.2.0)
+  - SQLite.swift (0.11.4):
+    - SQLite.swift/standard (= 0.11.4)
+  - SQLite.swift/standard (0.11.4)
+  - SwiftLog (0.9.1)
+  - SwiftyJSON (4.0.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.5)
+  - FontAwesome.swift (~> 1.2.0)
+  - OAuthSwift (~> 1.2.0)
+  - SQLite.swift (~> 0.11.4)
+  - SwiftLog (~> 0.9.1)
+  - SwiftyJSON (~> 4.0.0)
+
+SPEC CHECKSUMS:
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  FontAwesome.swift: 60063e3f19ba4801155d4b0f2334ab7585763ab3
+  OAuthSwift: 7fd6855b8e4d58eb5a30d156ea9bed7a8aecd1ca
+  SQLite.swift: 3e3bee21da701b5b9f87c4a672cb54f233505692
+  SwiftLog: 82dc4ef232f2029efd76bc7a4f922d5a5b065f8c
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+
+PODFILE CHECKSUM: 5fc3b3ab2e1bc40b2ea53a3d9f9a308b103b14e1
+
+COCOAPODS: 1.4.0
