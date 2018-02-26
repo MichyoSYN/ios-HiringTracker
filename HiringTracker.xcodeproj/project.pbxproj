@@ -12,8 +12,8 @@
 		1E14737C2019E3BD0011E963 /* SwiftyRest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E44DA7B2018368600790F4C /* SwiftyRest.framework */; };
 		1E14737D2019E3BD0011E963 /* SwiftyRest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1E44DA7B2018368600790F4C /* SwiftyRest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1E44DA4C2018349400790F4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E44DA4B2018349400790F4C /* AppDelegate.swift */; };
-		1E44DA4E2018349400790F4C /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E44DA4D2018349400790F4C /* MasterViewController.swift */; };
-		1E44DA502018349400790F4C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E44DA4F2018349400790F4C /* DetailViewController.swift */; };
+		1E44DA4E2018349400790F4C /* ApplicantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E44DA4D2018349400790F4C /* ApplicantsViewController.swift */; };
+		1E44DA502018349400790F4C /* ApplicantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E44DA4F2018349400790F4C /* ApplicantDetailViewController.swift */; };
 		1E44DA532018349400790F4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E44DA512018349400790F4C /* Main.storyboard */; };
 		1E44DA552018349400790F4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E44DA542018349400790F4C /* Assets.xcassets */; };
 		1E44DA582018349400790F4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E44DA562018349400790F4C /* LaunchScreen.storyboard */; };
@@ -70,8 +70,8 @@
 		1E1473772019E2120011E963 /* SwiftyRest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyRest.framework; path = "../SwiftyRest/Build/Products/Release-iphonesimulator/SwiftyRest.framework"; sourceTree = "<group>"; };
 		1E44DA482018349400790F4C /* HiringTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HiringTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E44DA4B2018349400790F4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1E44DA4D2018349400790F4C /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		1E44DA4F2018349400790F4C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		1E44DA4D2018349400790F4C /* ApplicantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicantsViewController.swift; sourceTree = "<group>"; };
+		1E44DA4F2018349400790F4C /* ApplicantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicantDetailViewController.swift; sourceTree = "<group>"; };
 		1E44DA522018349400790F4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1E44DA542018349400790F4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E44DA572018349400790F4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -143,8 +143,8 @@
 			isa = PBXGroup;
 			children = (
 				1E1473722019DFBE0011E963 /* AbstractCollectionViewController.swift */,
-				1E44DA4D2018349400790F4C /* MasterViewController.swift */,
-				1E44DA4F2018349400790F4C /* DetailViewController.swift */,
+				1E44DA4D2018349400790F4C /* ApplicantsViewController.swift */,
+				1E44DA4F2018349400790F4C /* ApplicantDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -521,9 +521,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E9BC7D9201AC94100D37441 /* RestCollectionService.swift in Sources */,
-				1E44DA502018349400790F4C /* DetailViewController.swift in Sources */,
+				1E44DA502018349400790F4C /* ApplicantDetailViewController.swift in Sources */,
 				1E44DA8A20188FF500790F4C /* BasicObject.swift in Sources */,
-				1E44DA4E2018349400790F4C /* MasterViewController.swift in Sources */,
+				1E44DA4E2018349400790F4C /* ApplicantsViewController.swift in Sources */,
 				1E44DA8C2019741600790F4C /* Context.swift in Sources */,
 				1E44DA8E201977BA00790F4C /* User.swift in Sources */,
 				1E1473732019DFBE0011E963 /* AbstractCollectionViewController.swift in Sources */,

@@ -217,7 +217,7 @@ class AbstractCollectionViewController: UITableViewController, UISearchResultsUp
     internal func doDelete(_ indexPath: IndexPath) {
         aiHelper.startActivityIndicator()
         let object = objects[indexPath.row] as BasicObject
-        let objectFullName = "\(objects[indexPath.row].type()) \(objects[indexPath.row].objectName())"
+        let objectFullName = "\(objects[indexPath.row].type()) \(String(describing: objects[indexPath.row].objectName()))"
         
         if object.getLink(.delete) != nil {
             let deletLink = object.getLink(.delete)!

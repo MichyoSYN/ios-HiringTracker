@@ -1,5 +1,5 @@
 //
-//  MasterViewController.swift
+//  ApplicantsViewController.swift
 //  HiringTracker
 //
 //  Created by Song, Michyo on 1/24/18.
@@ -9,9 +9,9 @@
 import UIKit
 import SwiftyRest
 
-class MasterViewController: AbstractCollectionViewController {
+class ApplicantsViewController: AbstractCollectionViewController {
 
-    var detailViewController: DetailViewController? = nil
+    var detailViewController: ApplicantDetailViewController? = nil
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +25,7 @@ class MasterViewController: AbstractCollectionViewController {
         navigationItem.rightBarButtonItem = addButton
         if let split = splitViewController {
             let controllers = split.viewControllers
-            detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
+            detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? ApplicantDetailViewController
         }
         
         loadData()

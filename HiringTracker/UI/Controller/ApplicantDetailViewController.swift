@@ -1,5 +1,5 @@
 //
-//  DetailViewController.swift
+//  ApplicantDetailViewController.swift
 //  HiringTracker
 //
 //  Created by Song, Michyo on 1/24/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class ApplicantDetailViewController: UIViewController {
 
     @IBOutlet weak var detailDescriptionLabel: UILabel!
 

@@ -21,6 +21,5 @@ class UserCollectionService: RestCollectionService {
         restObject = User(object: object)
         return restObject
     }
-    
 }
 
