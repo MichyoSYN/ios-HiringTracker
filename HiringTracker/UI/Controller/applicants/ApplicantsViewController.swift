@@ -10,7 +10,8 @@ import UIKit
 import SwiftyRest
 
 class ApplicantsViewController: AbstractCollectionViewController {
-
+    @IBOutlet weak var footView: UILabel!
+    
     var detailViewController: ApplicantDetailViewController? = nil
 
     override func viewDidLoad() {
@@ -18,28 +19,14 @@ class ApplicantsViewController: AbstractCollectionViewController {
         
         // Do any additional setup after loading the view, typically from a nib.
         navigationItem.leftBarButtonItem = editButtonItem
-
-//        setFootViewWithAi(footView)
+        
+        setFootViewWithAi(footView)
         setSearchBarOffset()
 
         let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(insertNewObject(_:)))
         navigationItem.rightBarButtonItem = addButton
-        if let split = splitViewController {
-            let controllers = split.viewControllers
-            detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? ApplicantDetailViewController
-        }
         
         loadData()
-    }
-
-    override func viewWillAppear(_ animated: Bool) {
-        clearsSelectionOnViewWillAppear = splitViewController!.isCollapsed
-        super.viewWillAppear(animated)
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     @objc
@@ -84,7 +71,7 @@ class ApplicantsViewController: AbstractCollectionViewController {
     // MARK: - Segues
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showDetail" {
+        if segue.identifier == "showApplicantDetail" {
 //            if let indexPath = tableView.indexPathForSelectedRow {
 //                let object = objects[indexPath.row] as BasicObject
 //                let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
@@ -94,6 +81,7 @@ class ApplicantsViewController: AbstractCollectionViewController {
 //            }
         }
     }
+    
 
     // MARK: - Table View
 

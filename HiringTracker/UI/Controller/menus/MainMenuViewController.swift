@@ -9,28 +9,33 @@
 import UIKit
 
 class MainMenuViewController: UITableViewController {
-    
-    var applicantsViewController: ApplicantsViewController? = nil
+
+//    var applicantsViewController: ApplicantsViewController? = nil
     
     override func viewDidLoad() {
-        if let split = splitViewController {
-            let controllers = split.viewControllers
-            applicantsViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? ApplicantsViewController
-        }
+//        if let split = splitViewController {
+//            let controllers = split.viewControllers
+//            applicantsViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? ApplicantsViewController
+//        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        clearsSelectionOnViewWillAppear = splitViewController!.isCollapsed
+        super.viewWillAppear(animated)
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
     
     // MARK: - Segues
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showApplicants" {
-            //            if let indexPath = tableView.indexPathForSelectedRow {
-            //                let object = objects[indexPath.row] as BasicObject
-            //                let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
-            //                controller.detailItem = object
-            //                controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
-            //                controller.navigationItem.leftItemsSupplementBackButton = true
-            //            }
-        }
+
+//        if segue.identifier == "showApplicants" {
+//            self.navigationController?.pushViewController(applicantsViewController!, animated: true)
+//        }
     }
 
 }
