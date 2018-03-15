@@ -9,4 +9,5 @@ target "HiringTracker" do
     pod 'FontAwesome.swift', '~> 1.2.0'
     pod 'SwiftLog', '~> 0.9.1'
     pod 'OAuthSwift', '~> 1.2.0'
+    #    pod 'SwiftyDocumentumREST', :git=>'https://github.com/Enterprise-Content-Management/SwiftyRest.git', :branch=>'master'
 end

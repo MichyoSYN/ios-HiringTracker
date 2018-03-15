@@ -10,8 +10,8 @@ import Foundation
 
 class Context {
     // MARK: Rest Info
-    static var rootUrl: String = "http://localhost:8080"
-    static var appContext: String = "/dctm-rest"
+    static var rootUrl: String = "http://10.62.87.24:8080"
+    static var appContext: String = "/hitra-rest"
     
     static func contextUrl() -> String {
         return rootUrl + appContext

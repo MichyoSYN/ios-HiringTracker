@@ -53,7 +53,7 @@ class ApplicantsViewController: AbstractCollectionViewController {
         AuthManager.setPassword("password")
         //
         
-        let applicantsService = UserCollectionService(tail: "/repositories/REPO/users") // TODO: need to modify
+        let applicantsService = ApplicantsCollectionService(tail: "/repositories/REPO/applicants") // TODO: need to modify
         applicantsService.getEntries(page, thisViewController: self) { (objects, isLastPage) in
             self.isLastPage = isLastPage
             self.objects = objects
@@ -72,13 +72,13 @@ class ApplicantsViewController: AbstractCollectionViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showApplicantDetail" {
-//            if let indexPath = tableView.indexPathForSelectedRow {
-//                let object = objects[indexPath.row] as BasicObject
-//                let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
-//                controller.detailItem = object
-//                controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
-//                controller.navigationItem.leftItemsSupplementBackButton = true
-//            }
+            let applicantDetailViewController = segue.destination as! ApplicantDetailViewController
+            if let selectedCell = sender as? ApplicantsItemCell {
+                let indexPath = tableView.indexPath(for: selectedCell)!
+                let selectedItem = objects[indexPath.row]
+                applicantDetailViewController.needReloadData = true
+                applicantDetailViewController.applicantUrl = selectedItem.linkToGet
+            }
         }
     }
     
@@ -94,10 +94,10 @@ class ApplicantsViewController: AbstractCollectionViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-
-        let object = objects[indexPath.row]
-        cell.textLabel!.text = object.name()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ApplicantItemCell", for: indexPath) as! ApplicantsItemCell
+        
+        let applicant = objects[indexPath.row] as! Applicant
+        cell.initCell(applicant: applicant)
         return cell
     }
 

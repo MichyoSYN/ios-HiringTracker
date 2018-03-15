@@ -10,4 +10,7 @@ import SwiftyRest
 
 class Document: BasicObject {
     
+    override init(object: RestObject) {
+        super.init(object: object)
+    }
 }

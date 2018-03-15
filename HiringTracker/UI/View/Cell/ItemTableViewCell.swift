@@ -9,6 +9,7 @@
 import UIKit
 import SwiftyRest
 
+// NO USE
 class ItemTableViewCell: UITableViewCell {
     
     // MARK: Properties

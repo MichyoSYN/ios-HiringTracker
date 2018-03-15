@@ -21,7 +21,7 @@ public class BasicObject: RestObject {
         getLinkToGet()
     }
     
-    fileprivate func getLinkToGet() {
+    func getLinkToGet() {
         if let selfLink = getLink(.selfRel) {
             linkToGet = selfLink
         } else if let editLink = getLink(.edit) {
@@ -59,5 +59,8 @@ public class BasicObject: RestObject {
         return getProperty(propertyName.rawValue)
     }
     
+    override public func getProperties() -> NSDictionary {
+        return super.getProperties()!
+    }
     
 }
