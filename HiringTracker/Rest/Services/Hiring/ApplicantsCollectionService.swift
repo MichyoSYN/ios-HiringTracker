@@ -9,12 +9,10 @@
 import UIKit
 import SwiftyRest
 
-class ApplicantsCollectionService: UserCollectionService {
+class ApplicantsCollectionService: RestCollectionService {
     override func getService(_ pageNo: NSInteger, completionHandler: @escaping (Array<RestObject>?, RestError?) -> ()) {
         super.getService(pageNo, completionHandler: completionHandler)
-        var params = self.getParams(pageNo)
-        params["view"] = ":all"
-        RestRequest.getRestObjectCollection(self.url!, params: params, completionHandler: completionHandler)
+        RestRequest.getRestObjectCollection(self.url!, params: self.getParams(pageNo), completionHandler: completionHandler)
     }
     
     override func constructRestObject(_ object: RestObject) -> BasicObject {

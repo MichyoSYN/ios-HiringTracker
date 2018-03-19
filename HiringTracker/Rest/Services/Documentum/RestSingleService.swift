@@ -17,14 +17,15 @@ class RestSingleService {
     }
     
     func getObject(
-        thisViewController: AbstractSingleViewController,
+        thisViewController: UIViewController,
+        aiHelper: ActivityIndicatorHelper,
         params: [String : Any]? = nil,
         completionHandler: @escaping (BasicObject) -> ()) {
         RestRequest.getRestObject(url, params: params) { object, error in
             if let error = error {
                 let errorMsg = error.getMessage()
                 ErrorAlert.show(errorMsg, controller: thisViewController)
-                thisViewController.aiHelper.stopActivityIndicator()
+                aiHelper.stopActivityIndicator()
                 return
             } else if let restObject = object {
                 completionHandler(BasicObject(object: restObject))

@@ -1,15 +1,16 @@
 //
-//  MainTabBarViewController.swift
+//  ApplicantTabBarViewController.swift
 //  HiringTracker
 //
-//  Created by Song, Michyo on 2/27/18.
+//  Created by Song, Michyo on 3/19/18.
 //  Copyright © 2018 Song, Michyo. All rights reserved.
 //
 
 import UIKit
 
-class MainTabBarViewController: UITabBarController {
-    @IBOutlet weak var mainTabBar: UITabBar!
+class ApplicantTabBarViewController: UITabBarController {
+
+    @IBOutlet weak var applicantTabBar: UITabBar!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,9 +19,9 @@ class MainTabBarViewController: UITabBarController {
     }
     
     func setTabBarItems() {
-        let items = mainTabBar.items!
+        let items = applicantTabBar.items!
         let applicationsItem = items[0] as UITabBarItem
-        IconHelper.setIconForBarItem(applicationsItem, iconName: .users)
+        IconHelper.setIconForBarItem(applicationsItem, iconName: .folder)
         let meItem = items[1] as UITabBarItem
         IconHelper.setIconForBarItem(meItem, iconName: .userCircle)
     }

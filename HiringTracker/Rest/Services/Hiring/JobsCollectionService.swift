@@ -1,25 +1,23 @@
 //
-//  UserCollectionService.swift
+//  JobsCollectionService.swift
 //  HiringTracker
 //
-//  Created by Song, Michyo on 1/26/18.
+//  Created by Song, Michyo on 3/19/18.
 //  Copyright © 2018 Song, Michyo. All rights reserved.
 //
 
 import UIKit
 import SwiftyRest
 
-class UserCollectionService: RestCollectionService {
-    
+class JobsCollectionService: RestCollectionService {
     override func getService(_ pageNo: NSInteger, completionHandler: @escaping (Array<RestObject>?, RestError?) -> ()) {
         super.getService(pageNo, completionHandler: completionHandler)
-        RestRequest.getRestObjectCollection(self.url!, params: self.getParams(pageNo), completionHandler: completionHandler)
+        RestRequest.getRestObjectCollection(self.url!, params: self.getParams(pageNo),completionHandler: completionHandler)
     }
     
     override func constructRestObject(_ object: RestObject) -> BasicObject {
         let restObject: BasicObject
-        restObject = User(object: object)
+        restObject = Job(object: object)
         return restObject
     }
 }
-

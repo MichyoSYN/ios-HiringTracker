@@ -36,6 +36,7 @@ class RestCollectionService {
         for param in inlineParam {
             params[param.0] = param.1
         }
+        params["view"] = ":all"
         return params
     }
     

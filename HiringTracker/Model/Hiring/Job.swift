@@ -13,9 +13,32 @@ class Job: Document {
     
     var importancy: Importancy = .D
     
+    override init(object: RestObject) {
+        super.init(object: object)
+        self.importancy = .D
+    }
+    
     init(object: RestObject, importancy: Importancy) {
         super.init(object: object)
         self.importancy = importancy
+    }
+    
+    func getDivision() -> String {
+        let division = self.getProperties().value(forKey: "title")
+        if division != nil && !(String(describing: division!).isEmpty) {
+            return String(describing: division!)
+        } else {
+            return "OpenText"
+        }
+    }
+    
+    func getJobId() -> String {
+        let id = self.getProperties().value(forKey: "r_object_id")
+        return id! as! String
+    }
+    
+    func getJobContentLink() -> String {
+        return getLink(.content)!
     }
 }
 

@@ -10,9 +10,9 @@ import UIKit
 import SwiftyRest
 
 class AbstractSingleViewController: UITableViewController {
-    var object: BasicObject?
-    
     var aiHelper = ActivityIndicatorHelper()
+
+    var object: BasicObject?
     var needReloadData: Bool = false
     
     override func viewDidAppear(_ animated: Bool) {
