@@ -8,32 +8,9 @@
 
 import UIKit
 
-class ErrorAlert {
+class ErrorAlert: Alert {
     
     static func show(_ msg: String, controller: UIViewController, dismissViewController: Bool = true) {
-        let alertController = UIAlertController(
-            title: "Error Alert",
-            message: msg,
-            preferredStyle: .alert)
-        alertController.addAction(UIAlertAction(
-            title: "Dismiss",
-            style: .default) { UIAlertAction in
-                if dismissViewController {
-                    dismissThisViewController(controller)
-                }
-            }
-        )
-        controller.present(alertController, animated: true, completion: nil)
-    }
-    
-    static func dismissThisViewController(_ controller: UIViewController) {
-        var navi: UINavigationController = controller.navigationController!
-        if navi.viewControllers.count == 1 {
-            if navi.navigationController != nil {
-                navi = navi.navigationController!
-            }
-        }
-        navi.setNavigationBarHidden(false, animated: true)
-        navi.popViewController(animated: true)
+        super.show(title: "Error Alert", msg, controller: controller, dismissViewController: dismissViewController)
     }
 }

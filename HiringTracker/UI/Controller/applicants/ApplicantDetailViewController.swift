@@ -31,7 +31,7 @@ class ApplicantDetailViewController: AbstractSingleViewController {
         //
         
         let applicantService = RestSingleService(url: applicantUrl!)
-        applicantService.getObject(thisViewController: self, aiHelper: self.aiHelper,params: ["view": ":all"]) { object in
+        applicantService.getObject(thisViewController: self, aiHelper: self.aiHelper) { object in
             self.object = Applicant(object: object)
             // set for ui
             self.view?.bringSubview(toFront: self.tableView)

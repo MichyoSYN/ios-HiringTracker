@@ -18,5 +18,5 @@ class Context {
     }
     
     // MARK: User Info
-    static var currentUser: User?
+    static var currentApplicant: Applicant?
 }

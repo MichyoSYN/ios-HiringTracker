@@ -11,6 +11,9 @@
 		1E1473762019DFF70011E963 /* ActivityIndicatorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1473752019DFF70011E963 /* ActivityIndicatorHelper.swift */; };
 		1E301F482043FAC400C5EB73 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E301F472043FAC400C5EB73 /* MainMenuViewController.swift */; };
 		1E301F4F204506EE00C5EB73 /* IconHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E301F4E204506EE00C5EB73 /* IconHelper.swift */; };
+		1E3985BB20624BED00790473 /* SwiftyRest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E3985B920624BE800790473 /* SwiftyRest.framework */; };
+		1E3985BC20624BED00790473 /* SwiftyRest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1E3985B920624BE800790473 /* SwiftyRest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1E3985BE206250F700790473 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3985BD206250F700790473 /* Alert.swift */; };
 		1E44BF2F2047C43A002DEF37 /* ApplicantDetailTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E44BF2E2047C43A002DEF37 /* ApplicantDetailTitleCell.swift */; };
 		1E44BF312047C46D002DEF37 /* ApplicantsItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E44BF302047C46D002DEF37 /* ApplicantsItemCell.swift */; };
 		1E44BF332047C56C002DEF37 /* Applicant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E44BF322047C56C002DEF37 /* Applicant.swift */; };
@@ -45,8 +48,6 @@
 		1EEACAE2205F9BEB00D48CCA /* JobDetailApplicantSideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEACAE1205F9BEB00D48CCA /* JobDetailApplicantSideViewController.swift */; };
 		1EEACAE5205F9FB600D48CCA /* RestDownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEACAE4205F9FB600D48CCA /* RestDownloadService.swift */; };
 		1EEACAE7205FB1E500D48CCA /* AbstractViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEACAE6205FB1E500D48CCA /* AbstractViewController.swift */; };
-		1EEACAEF205FBBC100D48CCA /* SwiftyRest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EEACAEB205FBBB100D48CCA /* SwiftyRest.framework */; };
-		1EEACAF0205FBBC100D48CCA /* SwiftyRest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1EEACAEB205FBBB100D48CCA /* SwiftyRest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4C889AE01C34CE860108A002 /* Pods_HiringTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3C90BFBC1F679262AFF52B4 /* Pods_HiringTracker.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,13 +69,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		1EEACAF1205FBBC200D48CCA /* Embed Frameworks */ = {
+		1E3985B820624B9F00790473 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				1EEACAF0205FBBC100D48CCA /* SwiftyRest.framework in Embed Frameworks */,
+				1E3985BC20624BED00790473 /* SwiftyRest.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -87,6 +88,8 @@
 		1E1473772019E2120011E963 /* SwiftyRest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyRest.framework; path = "../SwiftyRest/Build/Products/Release-iphonesimulator/SwiftyRest.framework"; sourceTree = "<group>"; };
 		1E301F472043FAC400C5EB73 /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
 		1E301F4E204506EE00C5EB73 /* IconHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconHelper.swift; sourceTree = "<group>"; };
+		1E3985B920624BE800790473 /* SwiftyRest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftyRest.framework; sourceTree = "<group>"; };
+		1E3985BD206250F700790473 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		1E44BF2E2047C43A002DEF37 /* ApplicantDetailTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicantDetailTitleCell.swift; sourceTree = "<group>"; };
 		1E44BF302047C46D002DEF37 /* ApplicantsItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicantsItemCell.swift; sourceTree = "<group>"; };
 		1E44BF322047C56C002DEF37 /* Applicant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Applicant.swift; sourceTree = "<group>"; };
@@ -128,7 +131,6 @@
 		1EEACAE1205F9BEB00D48CCA /* JobDetailApplicantSideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailApplicantSideViewController.swift; sourceTree = "<group>"; };
 		1EEACAE4205F9FB600D48CCA /* RestDownloadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestDownloadService.swift; sourceTree = "<group>"; };
 		1EEACAE6205FB1E500D48CCA /* AbstractViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractViewController.swift; sourceTree = "<group>"; };
-		1EEACAEB205FBBB100D48CCA /* SwiftyRest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftyRest.framework; sourceTree = "<group>"; };
 		7E60551E373960A7C5365BC2 /* Pods-HiringTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiringTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-HiringTracker/Pods-HiringTracker.release.xcconfig"; sourceTree = "<group>"; };
 		B693004F0FF918561DD68DBF /* Pods-HiringTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiringTracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HiringTracker/Pods-HiringTracker.debug.xcconfig"; sourceTree = "<group>"; };
 		F3C90BFBC1F679262AFF52B4 /* Pods_HiringTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HiringTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,7 +141,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1EEACAEF205FBBC100D48CCA /* SwiftyRest.framework in Frameworks */,
+				1E3985BB20624BED00790473 /* SwiftyRest.framework in Frameworks */,
 				4C889AE01C34CE860108A002 /* Pods_HiringTracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,7 +253,7 @@
 		1E44DA3F2018349400790F4C = {
 			isa = PBXGroup;
 			children = (
-				1EEACAEB205FBBB100D48CCA /* SwiftyRest.framework */,
+				1E3985B920624BE800790473 /* SwiftyRest.framework */,
 				1E44DA7D201837FA00790F4C /* Podfile */,
 				1E44DA4A2018349400790F4C /* HiringTracker */,
 				1E44DA612018349500790F4C /* HiringTrackerTests */,
@@ -419,6 +421,7 @@
 			isa = PBXGroup;
 			children = (
 				1E9BC7DB201ACC7300D37441 /* ErrorAlert.swift */,
+				1E3985BD206250F700790473 /* Alert.swift */,
 			);
 			path = Alert;
 			sourceTree = "<group>";
@@ -462,7 +465,7 @@
 				1E44DA462018349400790F4C /* Resources */,
 				0A46B61E4D7EA32C3007E4EE /* [CP] Embed Pods Frameworks */,
 				9C0E2193F7EE1FF0CA61CA0B /* [CP] Copy Pods Resources */,
-				1EEACAF1205FBBC200D48CCA /* Embed Frameworks */,
+				1E3985B820624B9F00790473 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -671,6 +674,7 @@
 				1E595B67205F899A007ED4E5 /* EmployeeTabBarViewController.swift in Sources */,
 				1E9BC7D2201AC61800D37441 /* ItemTableViewCell.swift in Sources */,
 				1E44DA9220197D1F00790F4C /* Document.swift in Sources */,
+				1E3985BE206250F700790473 /* Alert.swift in Sources */,
 				1E44DA4C2018349400790F4C /* AppDelegate.swift in Sources */,
 				1EEACAE2205F9BEB00D48CCA /* JobDetailApplicantSideViewController.swift in Sources */,
 				1E44DA8320188DEA00790F4C /* Job.swift in Sources */,

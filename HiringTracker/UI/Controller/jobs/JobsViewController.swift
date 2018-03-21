@@ -34,11 +34,6 @@ class JobsViewController: AbstractCollectionViewController {
         }
         ai.startActivityIndicator()
         
-        // TODO: delete after finish login && delete import SwiftyRest
-        AuthManager.setUserName("Administrator")
-        AuthManager.setPassword("password")
-        //
-        
         let jobsService = JobsCollectionService(tail: "/repositories/REPO/jobs") // TODO: need to modify
         jobsService.getEntries(page, thisViewController: self) { (objects, isLastPage) in
             self.isLastPage = isLastPage

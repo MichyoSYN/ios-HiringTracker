@@ -20,6 +20,7 @@ class JobDetailApplicantSideViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setApplyButton()
         
         aiHelper.addActivityIndicator(jobDescriptionTextView)
         aiHelper.startActivityIndicator()
@@ -33,6 +34,27 @@ class JobDetailApplicantSideViewController: UIViewController {
         
         getJobDescription()
     }
+    
+    // MARK: - UI
+    
+    func setApplyButton() {
+        let applyButton = UIBarButtonItem(title: "Apply", style: .plain, target: self, action: #selector(self.applyThisJob))
+        self.navigationItem.rightBarButtonItem = applyButton
+    }
+    
+    // MARK: - Button control
+    
+    @objc func applyThisJob() {
+        let jobId = job!.getJobId()
+        let applyUrl = Context.currentApplicant!.getLink("version-history")!
+        let applyService = RestSingleService(url: applyUrl)
+        
+        applyService.putObject(thisViewController: self, aiHelper: nil, params: ["job": jobId]) { object in
+            Alert.show("Successfully apply for Job \(String(describing: self.job!.name()))", controller: self)
+        }
+    }
+    
+    // MARK: - Data initialize
     
     func getJobDescription() {
         if job != nil {

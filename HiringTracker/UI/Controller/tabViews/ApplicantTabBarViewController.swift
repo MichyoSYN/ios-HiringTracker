@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyRest
 
 class ApplicantTabBarViewController: UITabBarController {
 
@@ -16,6 +17,20 @@ class ApplicantTabBarViewController: UITabBarController {
         super.viewDidLoad()
         
         setTabBarItems()
+        
+        login()
+    }
+    
+    // TODO: this must be moved to login control controller
+    func login() {
+        AuthManager.setUserName("ann.takman")
+        AuthManager.setPassword("password")
+        
+        let currentUserService = RestSingleService(url: Context.contextUrl() + "/repositories/REPO/current-applicant")
+        currentUserService.getObject(thisViewController: self, aiHelper: nil) { applicant in
+            let object = Applicant(object: applicant)
+            Context.currentApplicant = object
+        }
     }
     
     func setTabBarItems() {
