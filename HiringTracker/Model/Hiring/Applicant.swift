@@ -11,6 +11,7 @@ import SwiftyRest
 class Applicant: Document {
     var username: String = ""
     var loginId: String = ""
+    var appliedJobId: String?
     
     override init(object: RestObject) {
         let rawDic = object.getRawDictionary()
@@ -23,5 +24,13 @@ class Applicant: Document {
             self.loginId = id as! String
         }
         super.init(object: object)
+    }
+    
+    func getAppliedJobId() -> String? {
+        return appliedJobId
+    }
+    
+    func setAppliedJobId(id: String) {
+        appliedJobId = id
     }
 }

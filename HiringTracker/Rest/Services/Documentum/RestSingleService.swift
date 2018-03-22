@@ -10,7 +10,7 @@ import UIKit
 import SwiftyRest
 import Alamofire
 
-class RestSingleService {
+class RestSingleService: UtilService {
     var url: String!
     
     init(url: String) {
@@ -34,11 +34,7 @@ class RestSingleService {
         completionHandler: @escaping (BasicObject) -> ()) {
         RestRequest.getRestObject(url, params: getParams(params: params)) { object, error in
             if let error = error {
-                let errorMsg = error.getMessage()
-                ErrorAlert.show(errorMsg, controller: thisViewController)
-                if let ai = aiHelper {
-                    ai.stopActivityIndicator()
-                }
+                UtilService.failureHandler(error: error, thisViewController: thisViewController, aiHelper: aiHelper)
                 return
             } else if let restObject = object {
                 completionHandler(BasicObject(object: restObject))
@@ -48,15 +44,12 @@ class RestSingleService {
     
     func putObject(
         thisViewController: UIViewController,
-        aiHelper:ActivityIndicatorHelper? = nil,
+        aiHelper: ActivityIndicatorHelper? = nil,
         params: [String: Any]? = nil,
         completionHandler: @escaping (BasicObject) -> ()) {
         RestRequest.getRawJson(.PUT, url: url, params: params, headers: getPostRequestHeaders(), encoding: URLEncoding.queryString) { json, error in
             if let error = error {
-                ErrorAlert.show(error.getMessage(), controller: thisViewController)
-                if let ai = aiHelper {
-                    ai.stopActivityIndicator()
-                }
+                UtilService.failureHandler(error: error, thisViewController: thisViewController, aiHelper: aiHelper)
                 return
             } else if let json = json {
                 let dictionary = json.object as! NSDictionary

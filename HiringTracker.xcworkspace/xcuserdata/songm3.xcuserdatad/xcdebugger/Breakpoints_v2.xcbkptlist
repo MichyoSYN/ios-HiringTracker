@@ -138,7 +138,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HiringTracker/UI/Controller/applicants/ApplicantDetailViewController.swift"
-            timestampString = "543310663.800712"
+            timestampString = "543396220.105795"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "35"
@@ -182,11 +182,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HiringTracker/UI/View/Cell/Job/JobsItemCell.swift"
-            timestampString = "543145254.187915"
+            timestampString = "543396220.105907"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "20"
@@ -234,7 +234,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HiringTracker/UI/Controller/jobs/JobsViewController.swift"
-            timestampString = "543310663.8008929"
+            timestampString = "543396220.106017"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "55"
@@ -250,7 +250,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HiringTracker/UI/Controller/jobs/JobDetailApplicantSideViewController.swift"
-            timestampString = "543314595.27563"
+            timestampString = "543396220.106076"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "81"
@@ -266,7 +266,7 @@
                   moduleName = "HiringTracker"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/songm3/Github/HiringTracker/HiringTracker/UI/Controller/jobs/JobDetailApplicantSideViewController.swift"
-                  timestampString = "543313643.057848"
+                  timestampString = "543396044.461396"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "81"
@@ -281,7 +281,7 @@
                   moduleName = "HiringTracker"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/songm3/Github/HiringTracker/HiringTracker/UI/Controller/jobs/JobDetailApplicantSideViewController.swift"
-                  timestampString = "543313643.062235"
+                  timestampString = "543396044.464352"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "82"
@@ -298,7 +298,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HiringTracker/UI/Controller/jobs/JobDetailApplicantSideViewController.swift"
-            timestampString = "543314595.275769"
+            timestampString = "543396220.106136"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "82"
@@ -314,7 +314,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HiringTracker/UI/Controller/jobs/JobDetailApplicantSideViewController.swift"
-            timestampString = "543314595.275858"
+            timestampString = "543396220.106192"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "87"
@@ -330,7 +330,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HiringTracker/UI/Controller/jobs/JobDetailApplicantSideViewController.swift"
-            timestampString = "543314595.27592"
+            timestampString = "543396220.106246"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "86"
@@ -362,7 +362,7 @@
                   moduleName = "HiringTracker"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/songm3/Github/HiringTracker/HiringTracker/Rest/Enhancement/RestDownloadService.swift"
-                  timestampString = "543313643.088273"
+                  timestampString = "543396044.484465"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "15"
@@ -377,7 +377,7 @@
                   moduleName = "HiringTracker"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/songm3/Github/HiringTracker/HiringTracker/Rest/Enhancement/RestDownloadService.swift"
-                  timestampString = "543313643.092346"
+                  timestampString = "543396044.487529"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "16"
@@ -410,7 +410,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HiringTracker/UI/Controller/jobs/JobDetailApplicantSideViewController.swift"
-            timestampString = "543314595.276027"
+            timestampString = "543396220.106352"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "83"
@@ -426,7 +426,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HiringTracker/UI/Controller/jobs/JobDetailApplicantSideViewController.swift"
-            timestampString = "543314595.27609"
+            timestampString = "543396220.106427"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "88"
@@ -442,7 +442,7 @@
                   moduleName = "HiringTracker"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/songm3/Github/HiringTracker/HiringTracker/UI/Controller/jobs/JobDetailApplicantSideViewController.swift"
-                  timestampString = "543313643.117399"
+                  timestampString = "543396044.507192"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "88"
@@ -457,7 +457,7 @@
                   moduleName = "HiringTracker"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/songm3/Github/HiringTracker/HiringTracker/UI/Controller/jobs/JobDetailApplicantSideViewController.swift"
-                  timestampString = "543313643.121928"
+                  timestampString = "543396044.510569"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "89"
@@ -470,43 +470,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HiringTracker/UI/Controller/tabViews/ApplicantTabBarViewController.swift"
-            timestampString = "543310663.802565"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "login()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HiringTracker/UI/Controller/tabViews/ApplicantTabBarViewController.swift"
-            timestampString = "543310663.802629"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "login()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HiringTracker/UI/Controller/jobs/JobDetailApplicantSideViewController.swift"
-            timestampString = "543314595.276201"
+            timestampString = "543396220.106498"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "49"
@@ -522,11 +490,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HiringTracker/Rest/Services/Documentum/RestSingleService.swift"
-            timestampString = "543314595.276292"
+            timestampString = "543396220.106557"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
             landmarkName = "putObject(thisViewController:aiHelper:params:completionHandler:)"
             landmarkType = "7">
             <Locations>
@@ -538,11 +506,11 @@
                   moduleName = "HiringTracker"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/songm3/Github/HiringTracker/HiringTracker/Rest/Services/Documentum/RestSingleService.swift"
-                  timestampString = "543313643.140185"
+                  timestampString = "543396044.524285"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "54"
-                  endingLineNumber = "54"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
                   offsetFromSymbolStart = "50">
                </Location>
                <Location
@@ -553,11 +521,11 @@
                   moduleName = "HiringTracker"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/songm3/Github/HiringTracker/HiringTracker/Rest/Services/Documentum/RestSingleService.swift"
-                  timestampString = "543313643.144394"
+                  timestampString = "543396044.527782"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "55"
-                  endingLineNumber = "55"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
                   offsetFromSymbolStart = "762">
                </Location>
             </Locations>
@@ -570,11 +538,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HiringTracker/Rest/Services/Documentum/RestSingleService.swift"
-            timestampString = "543314595.27639"
+            timestampString = "543396220.1066231"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
             landmarkName = "putObject(thisViewController:aiHelper:params:completionHandler:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -586,7 +554,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HiringTracker/Rest/Services/Documentum/RestSingleService.swift"
-            timestampString = "543314595.276477"
+            timestampString = "543396220.106683"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "21"
@@ -608,6 +576,150 @@
             startingLineNumber = "34"
             endingLineNumber = "34"
             landmarkName = "sendRequest(_:url:params:headers:encoding:onSuccess:onFailure:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HiringTracker/UI/View/Cell/Job/JobsItemCell.swift"
+            timestampString = "543396220.106764"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "setAppliedStatus()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HiringTracker/UI/View/Cell/Job/JobsItemCell.swift"
+            timestampString = "543396220.106814"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "setAppliedStatus()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HiringTracker/UI/Controller/jobs/JobsViewController.swift"
+            timestampString = "543396220.1068701"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HiringTracker/UI/Controller/jobs/JobsViewController.swift"
+            timestampString = "543396220.10692"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "loadData(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HiringTracker/UI/Controller/login/LoginController.swift"
+            timestampString = "543396220.10697"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "prepare(for:sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HiringTracker/UI/Controller/login/LoginController.swift"
+            timestampString = "543396220.107352"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "prepare(for:sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HiringTracker/UI/Controller/login/LoginController.swift"
+            timestampString = "543396220.107574"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "login()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HiringTracker/UI/Controller/login/LoginController.swift"
+            timestampString = "543396220.107788"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HiringTracker/UI/Controller/login/LoginController.swift"
+            timestampString = "543396220.108018"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "login()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

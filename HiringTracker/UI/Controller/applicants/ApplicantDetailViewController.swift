@@ -54,7 +54,7 @@ class ApplicantDetailViewController: AbstractSingleViewController {
         case 0:
             return 1
         case 1:
-            if let applicant = object as? Applicant {
+            if (object as? Applicant) != nil {
                 return ApplicantDetailInfoCell.keys.count
             } else {
                 return 0
