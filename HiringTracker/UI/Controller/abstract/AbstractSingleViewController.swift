@@ -24,7 +24,10 @@ class AbstractSingleViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        self.reloadData()
+        if needReloadData {
+            self.reloadData()
+        }
+        
     }
     
     // MARK: - Utility

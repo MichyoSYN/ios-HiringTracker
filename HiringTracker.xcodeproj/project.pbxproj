@@ -16,6 +16,7 @@
 		1E3985BE206250F700790473 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3985BD206250F700790473 /* Alert.swift */; };
 		1E3985C0206359D300790473 /* UtilService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3985BF206359D300790473 /* UtilService.swift */; };
 		1E3985C320638E9100790473 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3985C220638E9100790473 /* LoginController.swift */; };
+		1E3985C72069E5CF00790473 /* ApplicantDetailSectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3985C62069E5CF00790473 /* ApplicantDetailSectionCell.swift */; };
 		1E44BF2F2047C43A002DEF37 /* ApplicantDetailTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E44BF2E2047C43A002DEF37 /* ApplicantDetailTitleCell.swift */; };
 		1E44BF312047C46D002DEF37 /* ApplicantsItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E44BF302047C46D002DEF37 /* ApplicantsItemCell.swift */; };
 		1E44BF332047C56C002DEF37 /* Applicant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E44BF322047C56C002DEF37 /* Applicant.swift */; };
@@ -94,6 +95,7 @@
 		1E3985BD206250F700790473 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		1E3985BF206359D300790473 /* UtilService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilService.swift; sourceTree = "<group>"; };
 		1E3985C220638E9100790473 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		1E3985C62069E5CF00790473 /* ApplicantDetailSectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicantDetailSectionCell.swift; sourceTree = "<group>"; };
 		1E44BF2E2047C43A002DEF37 /* ApplicantDetailTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicantDetailTitleCell.swift; sourceTree = "<group>"; };
 		1E44BF302047C46D002DEF37 /* ApplicantsItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicantsItemCell.swift; sourceTree = "<group>"; };
 		1E44BF322047C56C002DEF37 /* Applicant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Applicant.swift; sourceTree = "<group>"; };
@@ -365,6 +367,7 @@
 				1E44BF2E2047C43A002DEF37 /* ApplicantDetailTitleCell.swift */,
 				1E44BF302047C46D002DEF37 /* ApplicantsItemCell.swift */,
 				1E4565CF204804EE003B0461 /* ApplicantDetailInfoCell.swift */,
+				1E3985C62069E5CF00790473 /* ApplicantDetailSectionCell.swift */,
 			);
 			path = Applicant;
 			sourceTree = "<group>";
@@ -673,6 +676,7 @@
 				1E44DA8A20188FF500790F4C /* BasicObject.swift in Sources */,
 				1E44BF312047C46D002DEF37 /* ApplicantsItemCell.swift in Sources */,
 				1E44BF332047C56C002DEF37 /* Applicant.swift in Sources */,
+				1E3985C72069E5CF00790473 /* ApplicantDetailSectionCell.swift in Sources */,
 				1E595B5E205F83DF007ED4E5 /* JobsCollectionService.swift in Sources */,
 				1EE2B7832047E08C007C78CD /* AbstractSingleViewController.swift in Sources */,
 				1EEACAE7205FB1E500D48CCA /* AbstractViewController.swift in Sources */,

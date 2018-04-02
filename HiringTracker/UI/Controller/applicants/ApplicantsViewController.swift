@@ -76,8 +76,9 @@ class ApplicantsViewController: AbstractCollectionViewController {
             if let selectedCell = sender as? ApplicantsItemCell {
                 let indexPath = tableView.indexPath(for: selectedCell)!
                 let selectedItem = objects[indexPath.row]
-                applicantDetailViewController.needReloadData = true
-                applicantDetailViewController.applicantUrl = selectedItem.linkToGet
+                applicantDetailViewController.object = selectedItem
+//                applicantDetailViewController.needReloadData = true
+//                applicantDetailViewController.applicantUrl = selectedItem.linkToGet
             }
         }
     }

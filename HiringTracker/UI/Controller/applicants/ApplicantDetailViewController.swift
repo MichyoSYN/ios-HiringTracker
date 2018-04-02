@@ -11,36 +11,39 @@ import SwiftyRest
 
 class ApplicantDetailViewController: AbstractSingleViewController {
     
-    var applicantUrl: String?    
+//    var applicantUrl: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        loadData()
+        self.object = Context.currentApplicant
+        
+        // MARK: not need load data for applicant side view
+//        loadData()
     }
 
     // MARK: - Data
     override func loadData() {
         super.loadData()
         
-        aiHelper.startActivityIndicator()
-        
-        // TODO: delete after finish login && delete import SwiftyRest
-        AuthManager.setUserName("Administrator")
-        AuthManager.setPassword("password")
-        //
-        
-        let applicantService = RestSingleService(url: applicantUrl!)
-        applicantService.getObject(thisViewController: self, aiHelper: self.aiHelper) { object in
-            self.object = Applicant(object: object)
-            // set for ui
-            self.view?.bringSubview(toFront: self.tableView)
-            self.aiHelper.stopActivityIndicator()
-            DispatchQueue.main.async(execute: {
-                () -> Void in
-                self.tableView.reloadData()
-            })
-        }
+//        aiHelper.startActivityIndicator()
+//
+//        // TODO: delete after finish login && delete import SwiftyRest
+//        AuthManager.setUserName("Administrator")
+//        AuthManager.setPassword("password")
+//        //
+//
+//        let applicantService = RestSingleService(url: applicantUrl!)
+//        applicantService.getObject(thisViewController: self, aiHelper: self.aiHelper) { object in
+//            self.object = Applicant(object: object)
+//            // set for ui
+//            self.view?.bringSubview(toFront: self.tableView)
+//            self.aiHelper.stopActivityIndicator()
+//            DispatchQueue.main.async(execute: {
+//                () -> Void in
+//                self.tableView.reloadData()
+//            })
+//        }
     }
     
     // MARK: - Table view control
@@ -54,11 +57,7 @@ class ApplicantDetailViewController: AbstractSingleViewController {
         case 0:
             return 1
         case 1:
-            if (object as? Applicant) != nil {
-                return ApplicantDetailInfoCell.keys.count
-            } else {
-                return 0
-            }
+            return ApplicantDetailSectionCell.sectionNumber()
         default:
             return 0
         }
@@ -75,10 +74,8 @@ class ApplicantDetailViewController: AbstractSingleViewController {
             }
             return cell
         case 1:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "infoCell") as! ApplicantDetailInfoCell
-            if let applicant = object as? Applicant {
-                cell.initCell(applicant: applicant, indexPath: indexPath)
-            }
+            let cell = tableView.dequeueReusableCell(withIdentifier: "sectionCell") as! ApplicantDetailSectionCell
+            cell.initCell(row: indexPath.row)
             return cell
         default:
             return UITableViewCell.init()

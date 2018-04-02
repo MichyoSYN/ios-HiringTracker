@@ -20,7 +20,7 @@ class JobDetailApplicantSideViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setApplyButton()
+        setUI()
         
         aiHelper.addActivityIndicator(jobDescriptionTextView)
         aiHelper.startActivityIndicator()
@@ -36,6 +36,13 @@ class JobDetailApplicantSideViewController: UIViewController {
     }
     
     // MARK: - UI
+    func setUI() {
+        if let id = Context.currentApplicant?.appliedJobId {
+            if id != job!.getJobId() {
+                setApplyButton()
+            }
+        }
+    }
     
     func setApplyButton() {
         let applyButton = UIBarButtonItem(title: "Apply", style: .plain, target: self, action: #selector(self.applyThisJob))
